@@ -20,45 +20,6 @@ The STEDI Health team aims to leverage the wealth of motion sensor data to train
 
 A subset of early adopters has generously consented to share their data for research purposes. The machine learning model's training dataset should exclusively comprise data from these consenting customers, drawing from their balance trainers and accelerometer readings.
 
-## Implementation
 
-### Data Ingestion and Preparation
-
-**Glue Tables**:
-
-- [customer_data.sql](scripts/customer_data.sql)
-- [accelerometer_data.sql](scripts/accelerometer_data.sql)
-
-**Data Exploration**:
-
-*Landing Zone Customer Data*:
-
-![Landing Zone Customer Data](images/customer_data.png)
-
-*Landing Zone Accelerometer Data*:
-
-![Landing Zone Accelerometer Data](images/accelerometer_data.png)
-
-### Data Transformation and Enrichment
-
-**Glue ETL Jobs**:
-
-- [ingest_customer_data.py](scripts/ingest_customer_data.py)
-- [ingest_accelerometer_data.py](scripts/ingest_accelerometer_data.py)
-
-**Data Validation and Enrichment**:
-
-![Trusted Zone Customer Data](images/customer_trusted.png)
-
-### Curated Data
-
-**Glue ETL Jobs**:
-
-- [curate_customer_data.py](scripts/curate_customer_data.py)
-- [curate_accelerometer_data.py](scripts/curate_accelerometer_data.py)
-
-**Curated Data Visualization**:
-
-![Curated Data](images/curated_data.png)
 
 This project empowers STEDI Health to glean valuable insights from user data while upholding the highest standards of privacy and data security.
